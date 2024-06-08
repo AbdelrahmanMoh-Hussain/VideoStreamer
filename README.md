@@ -25,14 +25,22 @@
    ```sh
    git clone https://github.com/AbdelrahmanMoh-Hussain/VideoStreamer.git
    cd VideoStreamer
-2. Open the Project in Visual Studio
+2. **Open the Project in Visual Studio**
 - Open VideoStreamer.sln in Visual Studio.
   
-3. Restore NuGet Packages
+3. **Restore NuGet Packages**
 - Right-click on the solution in the Solution Explorer and select Restore NuGet Packages.
   
-4. Configure VLC Path
+4. **Configure VLC Path**
 - Ensure the VLC library path is correctly set in MainWindow.xaml.cs.
   
-5. Build and Run
+5. **Build and Run**
 - Press F5 to build and run the application.
+
+### Usage
+1. **Launch the Application**
+- Start VideoStreamer from Visual Studio or the executable file in the build directory.
+  
+2. **Start Streaming**
+- Enter the RTSP stream URL in the designated field.
+- Click on the Play button to begin streaming.
