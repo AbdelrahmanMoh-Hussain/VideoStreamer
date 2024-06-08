@@ -23,8 +23,11 @@ namespace VideoStreamer
             };
 
             this.StreamControl.SourceProvider.CreatePlayer(vlcLibDirectory, options);
+            
+            //RTSP link here depend on the IP of Camera used
 
             //tbURL.Text = "rtsp://IP Camera address:8557/h264";
+
             tbURL.Text = "https://videos.pexels.com/video-files/3048225/3048225-hd_1280_720_30fps.mp4";
         }
 
