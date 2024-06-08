@@ -9,7 +9,6 @@
 - **High-Quality Streaming**: Stream video content with minimal latency and high fidelity using the robust VLC engine.
 - **User-Friendly Interface**: A clean and intuitive UI that simplifies the streaming process.
 - **Flexible Media Options**: Supports various media options for customizing your streaming experience.
-- **Open Source**: Fully open-source, allowing for customization and enhancement.
 
 ## Getting Started
 
@@ -26,3 +25,14 @@
    ```sh
    git clone https://github.com/AbdelrahmanMoh-Hussain/VideoStreamer.git
    cd VideoStreamer
+2. Open the Project in Visual Studio
+- Open VideoStreamer.sln in Visual Studio.
+  
+3. Restore NuGet Packages
+- Right-click on the solution in the Solution Explorer and select Restore NuGet Packages.
+  
+4. Configure VLC Path
+- Ensure the VLC library path is correctly set in MainWindow.xaml.cs.
+  
+5. Build and Run
+- Press F5 to build and run the application.
