@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VideoStreamer"
         mc:Ignorable="d"
-        Title="Video Streaming" Height="500" Width="586" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Video Streaming" Height="500" Width="586" WindowStartupLocation="CenterScreen">
     <Grid>
         
         <Grid.RowDefinitions>
@@ -18,11 +18,10 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <ContentControl Grid.Row="0" Name="ControlContainer">
-        </ContentControl>
-        <Vlc:VlcControl xmlns:Vlc="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf" x:Name="StreamControl" Height="350" Width="586" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+        
+        <Vlc:VlcControl Grid.Row="0" xmlns:Vlc="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf" x:Name="StreamControl"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
 
-        <TextBox Text="URL" Grid.Row="1" Name="tbURL"  Width="450" Height="22"/>
+        <TextBox Text="URL" Grid.Row="1" Name="tbURL" Background="AliceBlue" />
         
         <Button Grid.Row="2" Click="OnPlayButtonClick">Play</Button>
         <Button Grid.Row="3" Click="OnStopButtonClick">Stop</Button>

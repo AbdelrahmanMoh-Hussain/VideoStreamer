@@ -22,13 +22,11 @@ namespace VideoStreamer
                 ":network-caching=200",
             };
 
-            this.StreamControl.SourceProvider.CreatePlayer(vlcLibDirectory, options);
+            this.StreamControl.SourceProvider.CreatePlayer(vlcLibDirectory);
             
             //RTSP link here depend on the IP of Camera used
-
             //tbURL.Text = "rtsp://IP Camera address:8557/h264";
 
-            tbURL.Text = "https://videos.pexels.com/video-files/3048225/3048225-hd_1280_720_30fps.mp4";
         }
 
         protected override void OnClosing(CancelEventArgs e)
@@ -48,7 +46,7 @@ namespace VideoStreamer
             }
             catch
             {
-                MessageBox.Show("Url can't be empty!");
+                MessageBox.Show("Url can't be empty!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -63,6 +61,7 @@ namespace VideoStreamer
         {
             if (this.StreamControl == null)
             {
+                MessageBox.Show("Media player is not initialized!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             if(speedBtn.IsChecked == true)
@@ -82,6 +81,8 @@ namespace VideoStreamer
         {
             if (this.StreamControl == null)
             {
+                MessageBox.Show("Media player is not initialized!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
                 return;
             }
 
@@ -92,6 +93,7 @@ namespace VideoStreamer
         {
             if (this.StreamControl == null)
             {
+                MessageBox.Show("Media player is not initialized!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
